@@ -4,23 +4,38 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@theme {
+  --clip-path-slant: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-manrope: var(--font-body-manrope);
+  --font-noto-serif: var(--font-noto-serif);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #faf9f7;
+    --foreground: #000000;
+    --brand-color: #725a39;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: var(--font-manrope);
+}
+
+button{
+  cursor: pointer;
+}
+
+h1,h2,h3,h4{
+  font-family: var(--font-noto-serif);
 }
