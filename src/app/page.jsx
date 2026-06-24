@@ -23,8 +23,8 @@ export default function Home() {
                 <Link href='/portfolio' className="py-2 px-4 text-(--brand-color) text-xs/5 tracking-wider flex items-center gap-2 font-bold">VIEW PORTFOLIO <FaArrowRight /></Link>
               </div>
             </div>
-            <div className="col-span-7 h-[calc(100vh-100px)]">
-              <img src="https://bty-salon.netlify.app/_next/static/media/hero-picture.0rwh5wqfhz_qc.png" alt="" className="[clip-path:polygon(5%_0%,100%_0%,95%_100%,0%_100%)] h-full w-full object-cover" />
+            <div className="col-span-7 h-[calc(100vh-100px)] w-full">
+              <img src="https://bty-salon.netlify.app/_next/static/media/hero-picture.0rwh5wqfhz_qc.png" alt="" className="[clip-path:polygon(5%_0%,100%_0%,95%_100%,0%_100%)] h-full w-full object-cover block" />
             </div>
           </div>
         </section>
