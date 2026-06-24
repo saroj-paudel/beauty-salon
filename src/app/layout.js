@@ -34,11 +34,14 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${noto_serif.variable} h-full antialiased`}
     >
-      <body>
-         <div className="wholeWrapper">
+     <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+     </head>
+     <body>
+        <div className="wholeWrapper">
       <Header />
         {children}
-        
+         
               <Footer />
     </div>
         </body>
